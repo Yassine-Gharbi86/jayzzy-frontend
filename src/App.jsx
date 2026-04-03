@@ -610,7 +610,7 @@ const Booking = ({ t, theme }) => {
 
             <div style={{ marginBottom: "14px" }}>
               <label style={{ display: "block", color: t.textMuted, fontSize: "10px", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "7px", fontWeight: "500" }}>Phone Number</label>
-              <input value={form.phone} onChange={e => setForm(p => ({ ...p, phone: e.target.value }))} style={iStyle("phone")} placeholder="+216 50 415 665" onFocus={focusInput} onBlur={e => blurInput(e, "phone")} />
+              <input value={form.phone} onChange={e => setForm(p => ({ ...p, phone: e.target.value }))} style={iStyle("phone")} placeholder="Insert your phone number" onFocus={focusInput} onBlur={e => blurInput(e, "phone")} />
               {errors.phone && <span style={{ color: "#EF4444", fontSize: "12px", marginTop: "4px", display: "block" }}>{errors.phone}</span>}
             </div>
 
